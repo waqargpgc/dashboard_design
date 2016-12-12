@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        /* USER PROFILE PAGE */
+        
+        .crd {
+            height: 80px;
+        }
+        
+        .crd p {
+            margin-right: -10px;
+        }
+        
+        .btn-pref .btn {
+            width: 100%;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Dashboard</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+
+    <!--  main core CSS    -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+
+
+    <!--  Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="../assets/css/themify-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div id="loader-wrapper">
+        <div class="loader-logo"></div>
+        <div id="loader">
+        </div>
+    </div>
+    <!--  end preloader -->
+    <div class="wrapper">
+        <!-- side navbar -->
+        <div class="sidebar" data-background-color="white" data-active-color="danger">
+            <div class="sidebar-wrapper">
+                <div class=logo>
+                    <img src="../assets/img/waqar.jpg" class="user-image img-responsive img-circle " />
+                </div>
+
+                <ul class="nav ">
+                    <li>
+                        <a href="../index.html">
+                            <i class="ti-panel "></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="userprofile.html ">
+                            <i class="ti-user "></i>
+                            <p>User Profile</p>
+                        </a>
+                    </li>
+                    <li class="active ">
+                        <a href="resume.html">
+                            <i class="ti-notepad"></i>
+                            <p>Resume</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interviews.html">
+                            <i class="ti-check-box "></i>
+                            <p>Interviews</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="application.html ">
+                            <i class="ti-layout-grid4-alt "></i>
+                            <p>Applications
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="ti-comment-alt "></i>
+                            <p>Messages</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ti-bell "></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- side navbar end -->
+        <!-- admin Dashboard  and notifications and Settings items -->
+        <div class="main-panel">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                        <a style="color: #f00; font-size:1.2em;" class="navbar-brand" href="#">
+                            Admin Dashboard
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+                                    <p>Notifications</p>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Notification 1</a></li>
+                                    <li><a href="#">Notification 2</a></li>
+                                    <li><a href="#">Notification 3</a></li>
+                                    <li><a href="#">Notification 4</a></li>
+                                    <li><a href="#">Another notification</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-settings"></i>
+                                    <p>Settings</p>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Show Top Navgation</a></li>
+                                    <li><a href="#">Fixed Top Navgation</a></li>
+                                    <li><a href="#">Show User Image</a></li>
+                                    <li><a href="#">Change Color Of Nav</a></li>
+                                    <li><a href="#">Do Some Thing Else</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- notifications admin Dashboard and setting items end -->
+            <div class="content">
+                <div class="container-fluid">
+                    <!-- card of Resumes Applied jobs message and e book -->
+                    <div class="row">
+                        <!-- card of Resume -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card crd">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="icon-big icon-warning text-center">
+                                                <i class="ti-notepad"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p>Edit Resume</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- card of Applied jobs -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card crd">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="icon-big icon-success text-center">
+                                                <i class="ti-check-box"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p>Download Resume</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card of Messages -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card crd">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="icon-big icon-danger text-center">
+                                                <i class="ti-comment-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p>Print Resume</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card of e -book -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card crd">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="icon-big icon-info text-center">
+                                                <i class="ti-widget-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <p>Delete Resume</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card of Resumes Applied jobs message and e book end  -->
+                    <!-- /. ROW  -->
+                    <div class="card card-inverse card-success text-xs-center">
+                        <div class="card-block">
+                            <blockquote class="card-blockquote">
+                                <p>A resume is one of the most important documents of your professional career. Simply put, the resume can be described as a brief document that highlights the academic qualifications, the professional experience and expertise,
+                                    and any other information regarding the profession and professional life of a person. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="btn-pref row">
+                        <div class="col-md-3">
+                            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="ti-export" aria-hidden="true"></span>
+                    <div class="hidden-xs">JOB SPECFIC RESUME</div>
+                </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    <div class="hidden-xs">FUNCTION RESUME</div>
+                </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <div class="hidden-xs">CHRONOLOGICAL RESUME</div>
+                </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" id="following" class="btn btn-default" href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <div class="hidden-xs">HYBRID RESUME</div>
+                </button>
+                        </div>
+                    </div>
+
+                    <div class="well">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in" id="tab1">
+                                <h3>JOB SPECFIC RESUME</h3>
+                                <p>A strong point of the combination resume is that it is flexible, so you can structure it in a manner that is best for you. The strategy here is to begin with a career summary, which is also called a qualifications summary.
+                                    This will emphasize your strongest credentials so that the hiring manager will see it immediately and be enticed to read the balance of your resume. In the summary you can highlight key skills, job experience, and expertise
+                                    that are relevant to the position you are applying for, while still maintaining the chronological format that the majority of employers still prefer.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade in" id="tab2">
+                                <h3>FUNCTION RESUME</h3>
+                                <p>A strong point of the combination resume is that it is flexible, so you can structure it in a manner that is best for you. The strategy here is to begin with a career summary, which is also called a qualifications summary.
+                                    This will emphasize your strongest credentials so that the hiring manager will see it immediately and be enticed to read the balance of your resume. In the summary you can highlight key skills, job experience, and expertise
+                                    that are relevant to the position you are applying for, while still maintaining the chronological format that the majority of employers still prefer.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade in" id="tab3">
+                                <h3>CHRONOLOGICAL RESUME</h3>
+                                <p>A strong point of the combination resume is that it is flexible, so you can structure it in a manner that is best for you. The strategy here is to begin with a career summary, which is also called a qualifications summary.
+                                    This will emphasize your strongest credentials so that the hiring manager will see it immediately and be enticed to read the balance of your resume. In the summary you can highlight key skills, job experience, and expertise
+                                    that are relevant to the position you are applying for, while still maintaining the chronological format that the majority of employers still prefer.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade in" id="tab4">
+                                <h3>HYBRID RESUME</h3>
+                                <p>A strong point of the combination resume is that it is flexible, so you can structure it in a manner that is best for you. The strategy here is to begin with a career summary, which is also called a qualifications summary.
+                                    This will emphasize your strongest credentials so that the hiring manager will see it immediately and be enticed to read the balance of your resume. In the summary you can highlight key skills, job experience, and expertise
+                                    that are relevant to the position you are applying for, while still maintaining the chronological format that the majority of employers still prefer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- main-panel -->
+            </div>
+            <!-- wrapper -->
+
+
+            <!--   Core JS Files   -->
+            <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+            <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+            <!-- main Core javascript and methods for Demo purpose -->
+            <script src="../assets/js/main.js"></script>
+            </script>
+            <script>
+                $(document).ready(function() {
+                    $(".btn-pref .btn").click(function() {
+                        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+                        //$(".tab").addClass("active"); // instead of this do the below 
+                        $(this).removeClass("btn-default").addClass("btn-primary");
+                    });
+                });
+            </script>
+</body>
+
+</html>
